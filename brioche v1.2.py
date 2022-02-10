@@ -12,7 +12,3 @@ if ing_base.upper() == "F":
     qt_levure = qt_farine * (1.16 /100)
 
 # changement de direction. Utiliser comme mesure de base la briche unitaire
-
-    print(qt_lait)
-
-
