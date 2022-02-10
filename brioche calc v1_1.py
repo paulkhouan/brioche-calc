@@ -1,5 +1,3 @@
-
-
 print'Bienvenue dans le calculateur de brioche. ')
 qt_farine = float(input('Veuillez entrer la quantite de farine en grammes: '))
 
