@@ -1,0 +1,95 @@
+print('Bienvenue dans le calculateur de brioche v1.3 ')
+# nouvelle proportions farine = 50%, lait = 20%, sucre = 8%, beurre = 6%, sel = 2%, Levure = 2%, oeuf = 12%
+# poids total 500g unite
+ing_base = input('Quel ingredient de base?: (F)arine, (L)ait, (S)ucre, (O)euf (B)eurre?: ')
+
+if ing_base.upper() == "F":
+    qt_farine = input("Veuillez entrer la quantite de farine en grammes: ")
+    brioche_unit = float(qt_farine) * 2
+    qt_lait = float(brioche_unit) / 5
+    qt_sucre = float(brioche_unit) / 12.5
+    qt_oeuf = float(brioche_unit) / 8.333
+    qt_beurre = float(brioche_unit) / 16.667
+    qt_sel = float(brioche_unit) / 50
+    qt_levure = float(brioche_unit) / 50
+    print('Pour ' + str(int(qt_farine)) + 'g de farine, il vous faudra: ')
+    print('lait: ' + str(int(qt_lait)) + 'g')
+    print('sucre: ' + str(int(qt_sucre)) + 'g')
+    print('oeufs: ' + str(int(qt_oeuf)) + 'g')
+    print('beurre: ' + str(int(qt_beurre)) + 'g')
+    print('sel: ' + str(int(qt_sel)) + 'g')
+    print('levure: ' + str(int(qt_levure)) + 'g')
+
+# jusqu'ici tout va bien. On passe au lait
+
+if ing_base.upper() == "L":
+    qt_lait = input("Veuillez entrer la quantite de lait en grammes: ")
+    brioche_unit = float(qt_lait) * 5
+    qt_farine = float(brioche_unit) / 2
+    qt_sucre = float(brioche_unit) / 12.5
+    qt_oeuf = float(brioche_unit) / 8.333
+    qt_beurre = float(brioche_unit) / 16.6667
+    qt_sel = float(brioche_unit) / 50
+    qt_levure = float(brioche_unit) / 50
+    print('Pour ' + str(int(qt_lait)) + 'g de lait, il vous faudra: ')
+    print('farine: ' + str(int(qt_farine)) + 'g')
+    print('sucre: ' + str(int(qt_sucre)) + 'g')
+    print('oeufs: ' + str(int(qt_oeuf)) + 'g')
+    print('beurre: ' + str(int(qt_beurre)) + 'g')
+    print('sel: ' + str(int(qt_sel)) + 'g')
+    print('levure: ' + str(int(qt_levure)) + 'g')
+
+# je viens de remarquer que mes mesures de sel et levure sont double
+if ing_base.upper() == "S":
+    qt_sucre = input("Veuillez entrer la quantite de sucre en grammes: ")
+    brioche_unit = float(qt_sucre) * 12.5
+    qt_farine = float(brioche_unit) / 2
+    qt_lait = float(brioche_unit) / 5
+    qt_oeuf = float(brioche_unit) / 8.333
+    qt_beurre = float(brioche_unit) / 16.6667
+    qt_sel = float(brioche_unit) / 50
+    qt_levure = float(brioche_unit) / 50
+    print('Pour ' + str(int(qt_sucre)) + 'g de sucre, il vous faudra: ')
+    print('farine: ' + str(int(qt_farine)) + 'g')
+    print('lait: ' + str(int(qt_lait)) + 'g')
+    print('oeufs: ' + str(int(qt_oeuf)) + 'g')
+    print('beurre: ' + str(int(qt_beurre)) + 'g')
+    print('sel: ' + str(int(qt_sel)) + 'g')
+    print('levure: ' + str(int(qt_levure)) + 'g')
+
+if ing_base.upper() == "o":
+    qt_oeuf = input("Veuillez entrer la quantite d'oeuf en grammes: ")
+    brioche_unit = float(qt_oeuf) * 8.333
+    qt_farine = float(brioche_unit) / 2
+    qt_sucre = float(brioche_unit) / 12.5
+    qt_lait = float(brioche_unit) / 5
+    qt_beurre = float(brioche_unit) / 16.6667
+    qt_sel = float(brioche_unit) / 50
+    qt_levure = float(brioche_unit) / 50
+    print('Pour ' + str(int(qt_sucre)) + 'g de sucre, il vous faudra: ')
+    print('farine: ' + str(int(qt_farine)) + 'g')
+    print('sucre: ' + str(int(qt_sucre)) + 'g')
+    print('oeufs: ' + str(int(qt_oeuf)) + 'g')
+    print('beurre: ' + str(int(qt_beurre)) + 'g')
+    print('sel: ' + str(int(qt_sel)) + 'g')
+    print('levure: ' + str(int(qt_levure)) + 'g')
+
+if ing_base.upper() == "B":
+    qt_beurre = input("Veuillez entrer la quantite de beurre en grammes: ")
+    brioche_unit = float(qt_beurre) * 16.6667
+    qt_farine = float(brioche_unit) / 2
+    qt_sucre = float(brioche_unit) / 12.5
+    qt_oeuf = float(brioche_unit) / 8.333
+    qt_lait = float(brioche_unit) / 5
+    qt_sel = float(brioche_unit) / 50
+    qt_levure = float(brioche_unit) / 50
+    print('Pour ' + str(int(qt_lait)) + 'g de lait, il vous faudra: ')
+    print('farine: ' + str(int(qt_farine)) + 'g')
+    print('sucre: ' + str(int(qt_sucre)) + 'g')
+    print('oeufs: ' + str(int(qt_oeuf)) + 'g')
+    print('beurre: ' + str(int(qt_beurre)) + 'g')
+    print('sel: ' + str(int(qt_sel)) + 'g')
+    print('levure: ' + str(int(qt_levure)) + 'g')
+else :
+    print('Veuillez entrer F, L, O, B')
+
